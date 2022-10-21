@@ -71,7 +71,6 @@ x = torch.from_numpy(X).to(device)
 
 model = Autoencoder(in_shape=3, enc_shape=2).double().to(device)
 summary(model,(3,),dtypes=[torch.double])
-
 error = nn.MSELoss()
 optimizer = optim.Adam(model.parameters())
 
